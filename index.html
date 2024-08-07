@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Schimmerleiter Loetkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <h1>Dokumentation Schimmerleiter-Lötkit</h1>
+  <entry class="green">
+    <h2>ATTiny85 flashen</h2>
+    <h2>Windows</h2>
+    <p>Du brauchst: 1x Arduino Uno, 1x Breadboard, 1x Elektrolytkondensator (10uF bis 100uF), 6x Verbindungskabel, 1x USB-C-auf-USB-A-Kabel</p>
+    <h2>Schritt 1</h2>
+    <p>Downloade und entpacke `attiny_setup.zip`.</p>
+    <h2>Schritt 2</h2>
+    <p>Doppelklicke auf `attinysetup.bat`.</p>
+    <h2>Schritt 3</h2>
+    <p>Folge den Anweisungen. Wenn dazu aufgefordert, verbinde verbinde den ATTiny85 wie abgebildet.</p>
+    <h2>Fertig!</h2>
+  </entry>
+  <entry class="green">
+    <h2>ATTiny85 flashen</h2>
+    <h2>Linux</h2>
+    <p>Du brauchst: 1x Arduino Uno, 1x Breadboard, 1x Elektrolytkondensator (10uF bis 100uF), 6x Verbindungskabel, 1x USB-C-auf-USB-A-Kabel</p>
+    <p>Du kannst `avrdude` verwenden, um die Binaries direkt auf den Attiny85 zu flashen.<br>
+    Die Binary-Dateien findest du in `attiny_setup.zip`<br>
+    `avrdude` kann über die Kommandzeile heruntergeladen werden:</p>
+    <code>sudo apt-get install avrdude</code>
+    <p>Zunächst muss der Arduino Uno als Programmer geflasht werden. Schließe ihn dafür ohne ATTiny85 an. <br>
+    Zum Flashen brauchst du den Namen des Ports über den der Arduino Uno angeschlossen ist. <br>
+    Mit diesem Command kann der Arduino Uno geflasht werden. Füge dazu den entprechenden Portnamen ein.</p>
+    <code>avrdude -c arduino -p m328p -P [Portname] -U flash:w:ArduinoISP.hex</code>
+    <p>Im nächsten Schritt müssen die Fuses des ATTiny85 gesetzt werden (lfuse: 0xE2, hfuse: 0xDF, efuse: 0xFF).<br>
+      Verbinde dafür den ATTinz85 wie abgebildet mit dem Arduino Uno. <br>
+    Du kannst die folgenden Command verwenden:</p>
+    <code>avrdude -c arduino -b 19200 -p attiny85 -P [Portname] -U lfuse:w:0xE2:m</code>
+    <code>avrdude -c arduino -b 19200 -p attiny85 -P [Portname] -U hfuse:w:0xDF:m</code>
+    <code>avrdude -c arduino -b 19200 -p attiny85 -P [Portname] -U efuse:w:0xFF:m</code>
+    <p>Im letzen Schritt wird der ATTiny geflasht.</p>
+    <code>avrdude -c arduino -b 19200 -p attiny85 -P [Portname] -U flash:w:firmware.hex</code>
+  </entry>
+</body>
