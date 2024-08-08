@@ -28,9 +28,13 @@ T no_wrap_sub(const T a, const T b)
     return 0;
 }
 
-void init_values()
+void measure_initial_brightness()
 {
   _InitialBrightness = analogRead(_LightSensor);
+}
+
+void init_values()
+{
   trigger_timeout_start_ms = 0;
   trigger_timeout_started = false;
   timerBeginn = 0;
@@ -53,7 +57,6 @@ bool light_triggered()
       {
         trigger_timeout_started = false;
         trigger_timeout_start_ms = 0;
-        _InitialBrightness = val;
         return true;
       }
     }
@@ -70,7 +73,7 @@ bool dark_triggered()
 {
   const int32_t val = analogRead(_LightSensor);
 
-  if (val >= no_wrap_sub(_InitialBrightness, _ThresholdVoltage))
+  if (val >= _InitialBrightness)
   {
     if (!trigger_timeout_started)
     {
@@ -83,7 +86,6 @@ bool dark_triggered()
       {
         trigger_timeout_started = false;
         trigger_timeout_start_ms = 0;
-        _InitialBrightness = val;
         return true;
       }
     }
@@ -111,7 +113,7 @@ void blink_timer()
 
 void ring_timer()
 {
-  digitalWrite(_LedPin, !!(millis() & 1));
+  digitalWrite(_LedPin, 1);
 
   if (!!(millis() & 3072))
     tone(_Buzzer, 1000 + (millis() & 1023));
@@ -139,6 +141,7 @@ void setup()
 
   digitalWrite(_LedPin, 1); // to compensate for the brightness of the led.
   delay(100);
+  measure_initial_brightness();
   init_values();
   digitalWrite(_LedPin, 0);
 }
