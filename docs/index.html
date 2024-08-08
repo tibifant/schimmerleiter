@@ -66,6 +66,7 @@
             .sbs_sub {display: inline-block;width: 200pt;padding: 20pt 25pt;background: #e3e3e3;color: #3e3e3e;font-family: "Segoe UI", sans-serif;border: 5pt solid #eee;}
             .fouter {display:flex;}
             .finner {padding: 5pt;}
+            .container {display: block;line-height: 125%;font-size: 13pt;margin: 25pt auto;width: 50%;min-width: 500pt;padding: 25pt 45pt 40pt 45pt;background: #e3e3e3;color: #3e3e3e;font-family: "Segoe UI", sans-serif;border: 5pt solid #eee;}
             hr {margin: 25pt 0;border: none;height: 2pt;background: #cfcfcf;}
             deprecated {display: block;border: 1pt solid #cfc9af;background: #fff8ed;padding: 10pt 25pt;margin: 50pt 20pt 20pt;}
             deprecated::before {content: "[DEPRECATED]";font-family: Consolas, monospace;display: block;float: left;margin: -35pt -28pt;color: #cfc9af;font-size: 15pt;}
@@ -137,25 +138,21 @@
         <!-- ############################################################################################################ -->
         <div class="chapter"><div class="chapter-text">Löthilfe und Troubleshooting</div></div>
         <!-- ############################################################################################################ -->
-        <div class="sbs_container">
-            <div class="side_by_side">
-                <div class="sbs_sub" style="width:400pt;">
-                  <h2>Sicherheit</h2>
-                  <div class="fouter">
-                    <div class="finner">
-                      <h3>Verbrennungsgefahr</h3>
-                      Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.
-                    </div>
-                    <div class="finner">
-                      <h3>Belüftung</h3>
-                      Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.
-                    </div>
-                  </div>
+            <div class="container">
+              <h2>Sicherheit</h2>
+              <div class="fouter">
+                <div class="finner">
+                  <h3>Verbrennungsgefahr</h3>
+                  Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.
+                </div>
+                <div class="finner">
+                  <h3>Belüftung</h3>
+                  Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.
                 </div>
               </div>
             </div>
-            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung und Werkzeugpflege</div>
-        <div class="qa">
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung und Werkzeugpflege</div>
+            <div class="qa">
 
             <br>
             <h2>Lötkolben</h2>
@@ -239,7 +236,7 @@
             <br>
             <h2>Windows</h2>
             <ul>
-                <li>Schritt 1: Downloade und entpacke `attiny_setup.zip`.</li>
+                <li>Schritt 1: Downloade und entpacke <a href="https://github.com/tibifant/schimmerleiter/tree/main/attiny%20setup">`attiny_setup.zip`</a>.</li>
                 <li>Schritt 2: Doppelklicke auf `attinysetup.bat`.</li>
                 <li>Schritt 3: Folge den Anweisungen. Wenn dazu aufgefordert, verbinde den ATTiny85 wie abgebildet.</p>
             </ul>
@@ -250,7 +247,7 @@
             
             <ul>
                 
-                <li>Die Binary-Dateien findest du in `attiny_setup.zip`.</li>
+                <li>Die Binary-Dateien findest du in <a href="https://github.com/tibifant/schimmerleiter/tree/main/attiny%20setup">`attiny_setup.zip`</a>.</li>
                 <li>`avrdude` kann über die Kommandzeile heruntergeladen werden: <code>sudo apt-get install avrdude</code></li>
             </ul>
                 Zunächst muss der Arduino Uno als Programmer geflasht werden. Schließe ihn dafür ohne ATTiny85 an. <br>
