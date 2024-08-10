@@ -157,59 +157,153 @@
             <br>
             <h2>Lötkolben</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Für elektronische Schaltungen empfiehlt sich ein Lötkolben mit einer Leistung von 40-70 Watt.</li>
             </ul>
 
             <br>
             <h2>Flussmittel</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Beim Löten verdampft das im Lötzinn enthaltene Flussmittel. Bei wiederholtem Erhitzen einer Lötstelle
+                     kann es sinnvoll sein, zusätzliches Flussmittel aufzutragen.</li>
             </ul>
 
             <br>
             <h2>Lötspitze</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Eine saubere Lötspitze ist entscheidend für gute Lötergebnisse. Dazu Lötreste an einem nassen Schwamm 
+                    abwischen. Zudem sollte die Lötspitze regelmäßig überprüft und bei Bedarf mit Lötzinn gereinigt werden.</li>
             </ul>
         </div>
-            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Der Timer funktioniert nicht</div>
+            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Lötvorgang</div>
         <div class="qa">
 
             <br>
-            <h2>Verbrennungsgefahr</h2>
+            <h2>Strom</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Bevor an der Platine gelötet wird, sollte sichergestellt werden, dass sie nicht mit Strom versorgt wird.
+                     Die Batterien sollten erst eingesetzt werden, wenn die Platine fertig verlötet wurde.</li>
             </ul>
 
             <br>
-            <h2>Belüftung</h2>
+            <h2>Wärmeverteilung</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Damit eine stabile Lötstelle entsteht, müssen die zu verbindenden Metalle und das Lötzinn gleichmäßig erhitzt werden.
+                     Dazu den Lötkolben so lange an alle drei Stellen halten, bis das Lötzinn geschmolzen ist und eine Verbindung entstanden ist.</li>
             </ul>
+
+            <br>
+            <h2>Polung</h2>
+            <ul>
+                <li>LEDs sind polarisiert. Es sollte darauf geachtet werden, dass der Strom in die richtige Richtung fließt.</li>
+            </ul>
+
+            <br>
+            <h2>Querverbindungen vermeiden</h2>
+            <ul>
+                <li>Bei eng beieinander liegenden Lötstellen ist Vorsicht geboten, um Kurzschlüsse zu vermeiden.</li>
+            </ul>
+
+            <br>
+            <h2>Entlöten</h2>
+            <ul>
+                <li>Falls eine Lötstelle korrigiert werden muss oder Lötzinn entfernt werden soll, kann eine Entlötpumpe
+                     benutzt werden. Dazu das Lötzinn mit dem Lötkolben erhitzen, die Entlötpumpe ansetzen und aktivieren, um das flüssige Lötzinn abzusaugen.</li>
+            </ul>
+
         </div>
           
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Der Timer funktioniert nicht </div>
+        <div class="qa">
+
+            <br>
+            <h2>Teile vertauscht</h2>
+            <ul>
+                <li>Es sollte sichergestellt werden, dass sich alle Komponenten an der richtigen Stelle befinden.</li>
+            </ul>
+
+            <br>
+            <h2>Taschenlampe</h2>
+            <ul>
+                <li>Um den Timer zu starten/stoppen, muss die rote LED angeleuchtet werden. Es kann sein,
+                     dass sie zu kurz angeleuchtet wurde (kann 15 bis 30 Sekunden lang dauern) oder
+                      der Helligkeitsunterschied nicht groß genug ist (hellere Taschenlampe / dunklere Umgebung).</li>
+            </ul>
+
+            <br>
+            <h2>Timing</h2>
+            <ul>
+                <li>Die Anfangsmelodie und das Leuchten der blauen LED müssen vor dem Start des Timers abgewartet werden.</li>
+            </ul>
+
+            <br>
+            <h2>Querverbindungen</h2>
+            <ul>
+                <li>Beim Löten von Lötstellen, die nah beieinander liegen, können Querverbindungen entstehen,
+                     die zu einem Kurzschluss führen. Die Verbindung der beiden Bahnen muss unterbrochen werden. Dazu ist eine Entlötpumpe hilfreich.</li>
+            </ul>
+
+            <br>
+            <h2>ATtiny falsch herum</h2>
+            <ul>
+                <li>Der ATtiny hat eine bestimmte Pinbelegung. Es muss darauf geachtet werden, dass sich die Kerbe auf der richtigen Seite befindet.</li>
+            </ul>
+
+            <br>
+            <h2>LED falsch herum</h2>
+            <ul>
+                <li>Da die LEDs gepolt sind, ist es auch hier wichtig, sie richtig herum einzubauen. Neben dem Kondensator muss das
+                     längere Bein an minus und neben dem Widerstand muss es an plus.</li>
+            </ul>
+
+        </div>
         <!-- ############################################################################################################ -->
         <div class="chapter"><div class="chapter-text">Anleitung zur Betreuung des Löt-Kits</div></div>
         <!-- ############################################################################################################ -->
 
         <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung</div>
         <div class="qa">
+            
+            <p>Damit der Workshop reibungslos durchgeführt werden kann, sollten (neben dem Kit) folgende Materialien bereitgestellt werden:</p>
 
             <br>
-            <h2>Verbrennungsgefahr</h2>
+            <h2>Werkzeug:</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Lötkolben (mit Lötkolbenhalter) </li>
+                <li>Lötschwamm </li>
+                <li>Lötzinn </li>
+                <li>Flachzange </li>
+                <li>Seitenschneider </li>
+                <li>Entlötpumpe </li>
+                <li>Ebenfalls hilfreich:
+                    ‘Dritte Hand’ mit Krokodilklemmen </li>
             </ul>
 
             <br>
-            <h2>Belüftung</h2>
+            <h2>Sicherheit:</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Lötrauchabsauger (oder ein gut belüfteter Raum) </li>
+                <li>Erste-Hilfe-Material (es besteht die Gefahr von Verbrennungen) </li>
+                <li>(Hitzebeständige) Unterlage/Arbeitsplatte </li>
+                <li>Schutzbrille  </li>
+
+
             </ul>
         </div>
         
         <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Nachfüllen des Workshop-Kits</div>
         <div class="qa">
+
+            <p>Nach Abschluss eines Workshops gilt es, das Kit wieder einsatzbereit zu machen. Hierfür sind folgende Schritte notwendig:  </p>
+
+            <br>
+            <ul>
+                <li>Platine & ATtiny85 : </li>
+                <p> Für 5 € können die Platine (3 €) und ATtiny85 (2 €) bei Code & Context bestellt werden.</p>
+                <li>Bauteile bei Bedarf bestellen (ca. 2,50 € / Auffüllen): </li>
+                
+            
+
+
             <table>
                 <tr>
                     <th>Name</th>
@@ -222,7 +316,55 @@
                     <td><a href ="https://www.organzabeutel24.de/">https://www.organzabeutel24.de/</a>
                         (0,45 € / Stück)</td> 
                 </tr>
+                <tr>
+                    <td>LED (blau)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (0,10 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>LED (rot)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (0,05 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Widerstand</td>
+                    <td>470 Ohm; gegurtet</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Kondensator</td>
+                    <td>100 pF; Vielschicht-Keramik</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Piezosummer</td>
+                    <td>1,5 V; THT (Through-Hole Technology)</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (0,28 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Batteriegehäuse</td>
+                    <td>2x AAA; inkl. Kabel (rot & schwarz)</td>
+                    <td><a href ="https://www.reichelt.de/">https://www.reichelt.de/</a>
+                        (1,50 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>2x Batterien</td>
+                    <td>AAA; 1,5 V</td>
+                    <td></td> 
+                </tr>
             </table>
+            <p></p>
+            <li>Alle Teile in das Stoffsäckchen und zusammen in das ausgehöhlte Buch. </li>
+            <li>Das Lesezeichen ausdrucken, ausschneiden und auf Seite 12 der Geschichte einlegen. </li>
+
+
+
+        </ul>
         </div>
 
         <!-- ############################################################################################################ -->
