@@ -157,59 +157,156 @@
             <br>
             <h2>Lötkolben</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Für elektronische Schaltungen empfiehlt sich ein Lötkolben mit einer Leistung von 40-70 Watt.</li>
             </ul>
 
             <br>
             <h2>Flussmittel</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Beim Löten verdampft das im Lötzinn enthaltene Flussmittel. Bei wiederholtem Erhitzen einer Lötstelle
+                     kann es sinnvoll sein, zusätzliches Flussmittel aufzutragen.</li>
             </ul>
 
             <br>
             <h2>Lötspitze</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Eine saubere Lötspitze ist entscheidend für gute Lötergebnisse. Dazu Lötreste an einem nassen Schwamm 
+                    abwischen. Zudem sollte die Lötspitze regelmäßig überprüft und bei Bedarf mit Lötzinn gereinigt werden.</li>
             </ul>
         </div>
-            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Der Timer funktioniert nicht</div>
+            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Lötvorgang</div>
         <div class="qa">
 
             <br>
-            <h2>Verbrennungsgefahr</h2>
+            <h2>Strom</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Bevor an der Platine gelötet wird, sollte sichergestellt werden, dass sie nicht mit Strom versorgt wird.
+                     Die Batterien sollten erst eingesetzt werden, wenn die Platine fertig verlötet wurde.</li>
             </ul>
 
             <br>
-            <h2>Belüftung</h2>
+            <h2>Wärmeverteilung</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Damit eine stabile Lötstelle entsteht, müssen die zu verbindenden Metalle und das Lötzinn gleichmäßig erhitzt werden.
+                     Dazu den Lötkolben so lange an alle drei Stellen halten, bis das Lötzinn geschmolzen ist und eine Verbindung entstanden ist.</li>
             </ul>
+
+            <br>
+            <h2>Polung</h2>
+            <ul>
+                <li>LEDs sind polarisiert. Es sollte darauf geachtet werden, dass der Strom in die richtige Richtung fließt.</li>
+            </ul>
+
+            <br>
+            <h2>Querverbindungen vermeiden</h2>
+            <ul>
+                <li>Bei eng beieinander liegenden Lötstellen ist Vorsicht geboten, um Kurzschlüsse zu vermeiden.</li>
+            </ul>
+
+            <br>
+            <h2>Entlöten</h2>
+            <ul>
+                <li>Falls eine Lötstelle korrigiert werden muss oder Lötzinn entfernt werden soll, kann eine Entlötpumpe
+                     benutzt werden. Dazu das Lötzinn mit dem Lötkolben erhitzen, die Entlötpumpe ansetzen und aktivieren, um das flüssige Lötzinn abzusaugen.</li>
+            </ul>
+
         </div>
           
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Der Timer funktioniert nicht </div>
+        <div class="qa">
+
+            <br>
+            <h2>Teile vertauscht</h2>
+            <ul>
+                <li>Es sollte sichergestellt werden, dass sich alle Komponenten an der richtigen Stelle befinden.</li>
+            </ul>
+
+            <br>
+            <h2>Taschenlampe</h2>
+            <ul>
+                <li>Um den Timer zu starten/stoppen, muss die rote LED angeleuchtet werden. Es kann sein,
+                     dass sie zu kurz angeleuchtet wurde (kann 15 bis 30 Sekunden lang dauern) oder
+                      der Helligkeitsunterschied nicht groß genug ist (hellere Taschenlampe / dunklere Umgebung).</li>
+            </ul>
+
+            <br>
+            <h2>Timing</h2>
+            <ul>
+                <li>Die Anfangsmelodie und das Leuchten der blauen LED müssen vor dem Start des Timers abgewartet werden.</li>
+            </ul>
+
+            <br>
+            <h2>Querverbindungen</h2>
+            <ul>
+                <li>Beim Löten von Lötstellen, die nah beieinander liegen, können Querverbindungen entstehen,
+                     die zu einem Kurzschluss führen. Die Verbindung der beiden Bahnen muss unterbrochen werden. Dazu ist eine Entlötpumpe hilfreich.</li>
+            </ul>
+
+            <br>
+            <h2>ATtiny falsch herum</h2>
+            <ul>
+                <li>Der ATtiny hat eine bestimmte Pinbelegung. Es muss darauf geachtet werden, dass sich die Kerbe auf der richtigen Seite befindet.</li>
+            </ul>
+
+            <br>
+            <h2>LED falsch herum</h2>
+            <ul>
+                <li>Da die LEDs gepolt sind, ist es auch hier wichtig, sie richtig herum einzubauen. Neben dem Kondensator muss das
+                     längere Bein an minus und neben dem Widerstand muss es an plus.</li>
+            </ul>
+
+            <br>
+            <ul>[<a href="https://www.youtube.com/watch?v=KNWao0JgPwA">Löten für Einsteiger?</a> Oder direkt <a href="https://www.loetstation.info/richtig-loeten?">https://www.loetstation.info/richtig-loeten?</a>]</ul>
+
+        </div>
         <!-- ############################################################################################################ -->
         <div class="chapter"><div class="chapter-text">Anleitung zur Betreuung des Löt-Kits</div></div>
         <!-- ############################################################################################################ -->
 
         <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung</div>
         <div class="qa">
+            
+            <p>Damit der Workshop reibungslos durchgeführt werden kann, sollten (neben dem Kit) folgende Materialien bereitgestellt werden:</p>
 
             <br>
-            <h2>Verbrennungsgefahr</h2>
+            <h2>Werkzeug:</h2>
             <ul>
-                <li>Lötkolben werden sehr heiß. Jeglicher Hautkontakt, sowie Kontakt zu brennbaren Materialien sollte vermieden werden.</li>
+                <li>Lötkolben (mit Lötkolbenhalter) </li>
+                <li>Lötschwamm </li>
+                <li>Lötzinn </li>
+                <li>Flachzange </li>
+                <li>Seitenschneider </li>
+                <li>Entlötpumpe </li>
+                <li>Ebenfalls hilfreich:
+                    ‘Dritte Hand’ mit Krokodilklemmen </li>
             </ul>
 
             <br>
-            <h2>Belüftung</h2>
+            <h2>Sicherheit:</h2>
             <ul>
-                <li>Beim Löten entstehen Dämpfe, die gesundheitsschädlich sein können. Falls kein Lötrauchabsauger vorhanden ist, sollte die Arbeitsumgebung gut belüftet sein.</li>
+                <li>Lötrauchabsauger (oder ein gut belüfteter Raum) </li>
+                <li>Erste-Hilfe-Material (es besteht die Gefahr von Verbrennungen) </li>
+                <li>(Hitzebeständige) Unterlage/Arbeitsplatte </li>
+                <li>Schutzbrille  </li>
+
+
             </ul>
         </div>
         
         <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Nachfüllen des Workshop-Kits</div>
         <div class="qa">
+
+            <p>Nach Abschluss eines Workshops gilt es, das Kit wieder einsatzbereit zu machen. Hierfür sind folgende Schritte notwendig:  </p>
+
+            <br>
+            <ul>
+                <li>Platine & ATtiny85 : </li>
+                <p> Für 5 € können die Platine (3 €) und ATtiny85 (2 €) <a href="mailto:schimmerleiter@proton.me">bei uns bestellt</a> werden.</p>
+                <li>Bauteile bei Bedarf bestellen (ca. 2,50 € / Auffüllen): </li>
+                
+            
+
+
             <table>
                 <tr>
                     <th>Name</th>
@@ -222,17 +319,193 @@
                     <td><a href ="https://www.organzabeutel24.de/">https://www.organzabeutel24.de/</a>
                         (0,45 € / Stück)</td> 
                 </tr>
+                <tr>
+                    <td>LED (blau)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/led-5mm-bedrahtet-blau-600-mcd-60--5034b2d-ehd-a-p361934.html">https://www.reichelt.de/</a>
+                        (0,10 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>LED (rot)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/led-5mm-bedrahtet-rot-350-mcd-60--5003r1d-ehc-b-p361630.html">https://www.reichelt.de/</a>
+                        (0,05 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Widerstand</td>
+                    <td>470 Ohm; gegurtet</td>
+                    <td><a href ="https://www.reichelt.de/widerstand-metallschicht-470-ohm-0207-0-6-w-1--metall-470-p11826.html">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Kondensator</td>
+                    <td>100 pF; Vielschicht-Keramik</td>
+                    <td><a href ="https://www.reichelt.de/vielschicht-kerko-100-pf-50-100-v-npo-5-rm-2-5-npo-2-5-100p-p13495.html">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Piezosummer</td>
+                    <td>1,5 V; THT (Through-Hole Technology)</td>
+                    <td><a href ="https://www.reichelt.de/piezosummer-70db-4000-hz-1-5-v-pkm13epyh4002-b0-p360853.html">https://www.reichelt.de/</a>
+                        (0,28 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Batteriegehäuse</td>
+                    <td>2x AAA; inkl. Kabel (rot & schwarz)</td>
+                    <td><a href ="https://www.reichelt.de/entwicklerboards-batteriegehaeuse-2x-aaa-debo-battery-aaa-p239292.html">https://www.reichelt.de/</a>
+                        (1,50 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>2x Batterien</td>
+                    <td>AAA; 1,5 V</td>
+                    <td></td> 
+                </tr>
             </table>
+            <p></p>
+            <li>Alle Teile in das Stoffsäckchen und zusammen in das ausgehöhlte Buch. </li>
+            <li><a href="https://github.com/tibifant/schimmerleiter/blob/main/Lesezeichen%20Druckvorlage.pdf">Das Lesezeichen</a> ausdrucken, ausschneiden und auf Seite 12 der Geschichte einlegen. </li>
+
+
+
+        </ul>
         </div>
 
         <!-- ############################################################################################################ -->
         <div class="chapter"><div class="chapter-text">Anregungen für einen DIY Löt-Workshop</div></div>
         <!-- ############################################################################################################ -->
 
+        <div class="container">
+              <div class="finner">
+                <h3>Um was handelt es sich?</h3>
+                Diese Anleitung bietet einige Anregungen, um einen DIY-Löt-Workshop zu hosten. Die Kits (oder auch einzelne Teile) können für jeweils 14 € <a href="mailto:schimmerleiter@proton.me">bei uns bestellt</a> werden. 
+Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglichkeiten, die hier vorgestellt werden, sind lediglich Vorschläge. Es gibt also meist auch andere Wege, um an das Ziel zu kommen.
+              </div>
+              <div class="finner">
+                <h3>Pro Kit wird benötigt:</h3>
+                <li>Kit-Verpackung (Geschichte & Lesezeichen)</li> 
+                <li>Säckchen</li> 
+                <li>Platine</li>
+                <li>ATtiny85 (programmiert)</li> 
+                <li>Elektronische Komponenten</li> 
+              </div>
+          </div>
+        
+
+        
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Kit-Verpackung (inkl. Geschichte & Lesezeichen)</div>
+          <div class="qa">
+              
+              <p>Damit der Workshop reibungslos durchgeführt werden kann, sollten (neben dem Kit) folgende Materialien bereitgestellt werden:</p>
+  
+              <br>
+              <h2>1.Bestellen beim Schimmerleiter Team: </h2>
+              <ul>
+                Für 5 € kannst du die Verpackung <a href="mailto:schimmerleiter@proton.me">bei uns bestellen</a>.<br><br>
+               <b> Falls du die Verpackung selbst herstellen möchtest, muss <a href="https://github.com/tibifant/schimmerleiter/blob/main/Schimmerleiter.pdf">die Geschichte</a> im <a href="https://helpx.adobe.com/de/acrobat/kb/print-booklets-acrobat-reader.html">Broschürenformat</a> ausgedruckt werden.
+                Füge eine leere Seite für den Anfang und das Ende hinzu und verbinde die Seiten mit einem Tacker.
+                Drucke <a href="https://github.com/tibifant/schimmerleiter/blob/main/Lesezeichen%20Druckvorlage.pdf">das Lesezeichen</a> aus und schneide es zu.
+              </b>
+              </ul>
+  
+              <br>
+              <h2>2.Buch aushöhlen:</h2>
+              <ul>
+                <li>Du benötigt zunächst ein (mindestens 3,5 cm) dickes, gebundenes Buch. Stelle sicher, dass das Buch groß genug ist, um DIN-A5-Seiten zu enthalten.</li>
+                <li>Höhle das Buch aus. Lasse dabei die ersten 22 Seiten (circa) aus. Das Loch in dem Buch sollte mindestens 3 cm tief sein. Du kannst dazu <a href="https://www.youtube.com/watch?v=HO4JU3kuJCs">hier eine Anleitung in Videoform</a> finden.</li>
+                <li>Schneide die ersten ausgelassenen Seiten aus dem Buch raus.</li> 
+                <li>Klebe die Geschichte, nachdem du das Buch fertig ausgehöhlt hast und es getrocknet ist, auf der Innenseite des Buchdeckels ein. 
+                <li>Klebe dabei die leere Rückseite der Geschichte so in das Buch, dass sie von der Buchmitte aus geöffnet wird.</li>
+                <li>Das ausgedruckte Lesezeichen legst du auf Seite 12 der Geschichte ein, sodass es passend zur Geschichte gefunden wird.</li>
+                <li>Zum Schluss musst du noch dafür sorgen, dass der Titel “Der Schimmerleiter” auf der Verpackung steht.</li>
+              </ul>
+              <img src="assets/buch.png">
+
+              <h2>3.Buch aus Karton/Pappe fertigen:</h2>
+              
+              <img src="assets/null.png">
+
+              <ul>
+                <li>Klebe die Geschichte auf der Innenseite des Buchdeckels ein.</li>
+                <li>Klebe dabei die leere Rückseite der Geschichte so in das Buch, dass sie von der Buchmitte aus geöffnet wird. </li>
+                <li>Das ausgedruckte Lesezeichen legst du auf Seite 12 der Geschichte ein, sodass es passend zur Geschichte gefunden wird.</li>
+
+              </ul>
+
+              <ul><b>Die Verpackungen können im Anschluss zu dem Workshop mitgegeben werden. Wenn du den Workshop nicht nur ein Mal anbieten möchtest, kannst du die Verpackungen
+                 aber auch behalten und sparst dir die Arbeit für das nächste Mal.</b></ul>
+
+
+          </div>
+
+
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Stoffsäckchen</div>
+          <div class="qa">
+                
+              <br>
+              <h2>1.Bestellen beim Schimmerleiter Team: </h2>
+              <ul>
+                Für 0,50 € kannst du das Säckchen <a href="mailto:schimmerleiter@proton.me">bei uns bestellen</a>.
+
+              </ul>
+  
+              <br>
+              <h2>2.Nähen:</h2>
+              <ul>
+                Wenn du die Möglichkeit hast, selbst Stoffsäckchen zu nähen (<a href="https://magazin.makerist.de/naehen/einfache-stoffsaeckchen-selber-naehen/">hier findest du eine Anleitung dazu</a>), kannst du sie mit den Maßen (etwa) 10 x 8 cm herstellen.
+              </ul>
+              <br>
+              <h2>3.Bestellen:</h2>
+              <ul>
+                Du kannst das Säckchen auch <a href="https://www.organzabeutel24.de/Leinenbeutel/Leinenbeutel-Kategorie/leinenbeutel-10x80-artikel.html">bestellen (0,45 € / Stück)</a>. Dazu finden sich einige Anbieter im Internet.
+              </ul>
+          </div>
+
+          
+
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Platine</div>
+          <div class="qa">
+                
+              <br>
+              <h2>1.Bestellen beim Schimmerleiter Team: </h2>
+              <ul>
+                Für 3 € kannst du die Platine <a href="mailto:schimmerleiter@proton.me">bei uns bestellen</a>.
+
+              </ul>
+  
+              <br>
+              <h2>2.Selbst fräsen:</h2>
+              <ul>
+                Falls dir eine CNC-Fräsmaschine zur Verfügung steht und du mit dieser umgehen kannst, findest du hier die CNC-Dateien [verlinken]. 
+              </ul>
+
+              <br>
+              <h2>3.Fräsen/Ätzen lassen:</h2>
+              <ul>
+                Stattdessen kannst du die Platinen auch fertigen lassen. Online lassen sich dazu verschiedene Anbieter finden.
+              </ul>
+
+              <br>
+              <h2>4.Lochplatinen:</h2>
+              <ul>
+                Eine weitere Möglichkeit ist die Nutzung von Lochplatinen.
+              </ul>
+          </div>
+
+
         <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">ATTiny85</div>
         <div class="qa">
 
-            Du brauchst: 1x Arduino Uno, 1x Breadboard, 1x Elektrolytkondensator (10uF bis 100uF), 6x Verbindungskabel, 1x USB-C-auf-USB-A-Kabel
+            <br>
+              <h2>1.Bestellen beim Schimmerleiter Team: </h2>
+              <ul>
+                Für 2 € kannst du die vorprogrammierten ATtiny85 <a href="mailto:schimmerleiter@proton.me">bei uns bestellen</a>.
+
+              </ul>
+  
+              <br>
+              <h2>2.Selbst programmieren (mit Arduino):</h2>
+             
+              Du brauchst: 1x Arduino Uno, 1x Breadboard, 1x Elektrolytkondensator (10uF bis 100uF), 6x Verbindungskabel, 1x USB-C-auf-USB-A-Kabel
             <br>
             <h2>Windows</h2>
             <ul>
@@ -276,6 +549,81 @@
             <br><br>
             Den Sourcecode findest du <a href="https://github.com/tibifant/schimmerleiter/blob/main/code/src/main.cpp">hier</a>.
         </div>
+
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Elektronische Komponenten</div>
+        <div class="qa">
+
+            <br>
+              <h2>1.Bestellen beim Schimmerleiter Team: </h2>
+              <ul>
+                Für 3 € kannst du die Bauteile <a href="mailto:schimmerleiter@proton.me">bei uns bestellen</a>.
+
+              </ul>
+  
+              <br>
+              <h2>2.Selbst bestellen:</h2>
+
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Spezifikationen</th>
+                    <th>Beispiellink (Preis)</th>
+                </tr>
+                <tr>
+                    <td>Stoffsäckchen</td>
+                    <td>10 x 8 cm - 15 x 10 cm (Kann auch selbst gemacht werden)</td>
+                    <td><a href ="https://www.organzabeutel24.de/">https://www.organzabeutel24.de/</a>
+                        (0,45 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>LED (blau)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/led-5mm-bedrahtet-blau-600-mcd-60--5034b2d-ehd-a-p361934.html">https://www.reichelt.de/</a>
+                        (0,10 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>LED (rot)</td>
+                    <td>5 mm; > 2 V max Betriebsspannung</td>
+                    <td><a href ="https://www.reichelt.de/led-5mm-bedrahtet-rot-350-mcd-60--5003r1d-ehc-b-p361630.html">https://www.reichelt.de/</a>
+                        (0,05 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Widerstand</td>
+                    <td>470 Ohm; gegurtet</td>
+                    <td><a href ="https://www.reichelt.de/widerstand-metallschicht-470-ohm-0207-0-6-w-1--metall-470-p11826.html">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Kondensator</td>
+                    <td>100 pF; Vielschicht-Keramik</td>
+                    <td><a href ="https://www.reichelt.de/vielschicht-kerko-100-pf-50-100-v-npo-5-rm-2-5-npo-2-5-100p-p13495.html">https://www.reichelt.de/</a>
+                        (0,07 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Piezosummer</td>
+                    <td>1,5 V; THT (Through-Hole Technology)</td>
+                    <td><a href ="https://www.reichelt.de/piezosummer-70db-4000-hz-1-5-v-pkm13epyh4002-b0-p360853.html">https://www.reichelt.de/</a>
+                        (0,28 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>Batteriegehäuse</td>
+                    <td>2x AAA; inkl. Kabel (rot & schwarz)</td>
+                    <td><a href ="https://www.reichelt.de/entwicklerboards-batteriegehaeuse-2x-aaa-debo-battery-aaa-p239292.html">https://www.reichelt.de/</a>
+                        (1,50 € / Stück)</td> 
+                </tr>
+                <tr>
+                    <td>2x Batterien</td>
+                    <td>AAA; 1,5 V</td>
+                    <td></td> 
+                </tr>
+            </table>
+            <p></p>
+            
+
+        </ul>
+        </div>
+
 
         <script>
           var idx = window.location.href.indexOf("#");
