@@ -70,6 +70,8 @@
             hr {margin: 25pt 0;border: none;height: 2pt;background: #cfcfcf;}
             deprecated {display: block;border: 1pt solid #cfc9af;background: #fff8ed;padding: 10pt 25pt;margin: 50pt 20pt 20pt;}
             deprecated::before {content: "[DEPRECATED]";font-family: Consolas, monospace;display: block;float: left;margin: -35pt -28pt;color: #cfc9af;font-size: 15pt;}
+            spoiler {color: #00000003;  background: #1116;}
+            spoiler:hover {color: white;}
         </style>
         <script type="text/javascript">
             function ask(e) {
@@ -122,18 +124,50 @@
         <div style="background: #383838;">
             <div class="main" style="margin: 0pt auto; background: transparent;color: #fff;box-shadow: none;padding: 170pt 0pt 220pt 0pt;">
                 <headline>Schimmerleiter Lötkit</headline>
-                <subheadl>Dokumentation und Anleitungen</subheadl>
+                <subheadl>Dokumentation und Anleitung</subheadl>
             </div>
         </div>
 
         <!-- ############################################################################################################ -->
-        <div style="max-width: 800pt;width: 80%;margin: 100pt auto;font-family: 'Segoe UI', sans-serif;font-weight: bold;font-size: 30pt;color: #ddd;background: #2c2c2c;padding: 30pt 50pt;box-shadow: 10pt 10pt #111;">
-            Dieses Kit bietet einen selbstständigen Lötworkshop, bei dem die Teilnehmenden durch eine Geschichte zum Löten angeleitet werden. Es ist Teil der Geschichte, herauszufinden, was eigentlich zusammengelötet wird. 
+        <div class="chapter"><div class="chapter-text">Das Lötkit</div></div>
+        <!-- ############################################################################################################ -->
+
+        <div style="max-width: 600pt;width: 80%;margin: 100pt auto;font-family: 'Segoe UI', sans-serif;font-weight: bold;font-size: 20pt;color: #ddd;background: #2c2c2c;padding: 30pt 50pt;box-shadow: 10pt 10pt #111;">
+            Dieses Kit bietet einen selbstständigen Lötworkshop, bei dem die Teilnehmenden durch die Geschichte Lötizias zum Löten angeleitet werden. <br><br>Lötizia findet eine geheimnisvolle Platine inmiten alter Bücher, im Laufe der Geschichte findet sie hraus, was sie gefunden hat, wie man es zusammenlötet und wofür es eigentlich gut ist. 
             Dieses Kit lädt ein, auf eine spannende Löt-Abenteuerreise zu gehen. Eine Geschichte begleitet die Teilnehmenden und lüftet nach und nach das Geheimnis.<br><br>
-            <b>ACHTUNG SPOILER, NICHT VERRATEN</b><br><br>
-            Das Ergebnis des Kits ist ein eigener 30-Minuten-Lese-Timer. Er wird gestartet, sobald es hell um ihn herum wird und stoppt, wenn er wieder von der ursprünglichen Dunkelheit umgeben ist.
+            <b>ACHTUNG SPOILER, NICHT VERRATEN!</b><br><br>
+            <spoiler>Das Ergebnis des Kits ist ein eigener 30-Minuten-Lese-Timer. Er wird gestartet, sobald es hell um ihn herum wird und stoppt, wenn er wieder von der ursprünglichen Dunkelheit umgeben ist.</spoiler>
               
         </div>
+            <div class="container">
+              <div class="fouter">
+                <div class="finner">
+                    <h3>Wie funktioniert es?</h3>
+                    Das Schimmerleiter-Lötkit kann in allen Orten mit einer löttauglichen Werkstatt verliehen werden. Mithilfe der enthaltenen Geschichte wird es selbstständig durchgeführt.<br>
+                    Es kann aber auch für Workshops oder eine einmalige Nutzung in anderer Form verwendet werden.
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="fouter">
+                <div class="finner">
+                    <h3>Was enthält es?</h3>
+                    Das Lötkit besteht aus einem Buch indem die Geschichte Lötizias, die eine geheimnisvolle Platine inmitten alter Bücher findet, als Anleitung, sowie alle Bauteile enthalten sind.<br>
+                    Das gesamte Kit sowie alle Teile, die nach der Durchführung des Lötkits nachgerüstet werden müssen, können über das Schimmerleiter-Team bestellt oder selbst hergestellt werden. <br><br><a href="#A2">Hier</a> findest du alle Anleitungen zum selberbasteln.
+                </div>
+              </div>
+            </div>
+            
+            <div class="container">
+              <div class="fouter">
+                <div class="finner">
+                    <h3>Für wen ist es?</h3>
+                    Das Lötkit ist für alle, die noch nie einen Lötkolben in der Hand gehalten haben und gerne Bücher lesen.<br>
+                    <b>Ab 12 Jahren</b><br>
+                    <b>Dauer der Durchführung: ca. 2-3 Stunden</b>
+                </div>
+              </div>
+            </div>
 
         <!-- ############################################################################################################ -->
         <div class="chapter"><div class="chapter-text">Löthilfe und Troubleshooting</div></div>
@@ -151,7 +185,8 @@
                 </div>
               </div>
             </div>
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung und Werkzeugpflege</div>
+            <br><br>
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Vorbereitung und Werkzeugpflege</div>
             <div class="qa">
 
             <br>
@@ -174,7 +209,7 @@
                     abwischen. Zudem sollte die Lötspitze regelmäßig überprüft und bei Bedarf mit Lötzinn gereinigt werden.</li>
             </ul>
         </div>
-            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Lötvorgang</div>
+            <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Lötvorgang</div>
         <div class="qa">
 
             <br>
@@ -212,7 +247,7 @@
 
         </div>
           
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Der Timer funktioniert nicht </div>
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Der Timer funktioniert nicht </div>
         <div class="qa">
 
             <br>
@@ -260,10 +295,23 @@
 
         </div>
         <!-- ############################################################################################################ -->
-        <div class="chapter"><div class="chapter-text">Anleitung zur Betreuung des Löt-Kits</div></div>
+        <div class="chapter"><div class="chapter-text" id="A1">Anleitung zur Betreuung <br>des Lötkits</div></div>
         <!-- ############################################################################################################ -->
 
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Vorbereitung</div>
+        <div class="container">
+            <div class="fouter">
+                <div class="finner">
+                    <h3>Um was handelt es sich?</h3>
+                    Das Lötkit kann an allen Orten mit einer löttauglichen Werkstatt zum Verleih angeboten werden. <br>
+                    <a href="#A1Vorbereitung">Hier</a> findest du, welche Werkzeuge zur Verfügung stehen müssen.<br><br>
+                    Das Lötkit mitsammt aller Bauteile wird ausgeliehen und kann eigenständig durchgeführt werden. Die zusammengebaute Platine sowie das enthaltene Lesezeichen dürfen mitgenommen werden und müssen nachdem das Kit zurückgegeben wurde, aufgefüllt werden.<br>
+                    <a href="#A1Auffuellen">Hier</a> findest du, wie das Kit aufgefüllt wird<br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="A1Vorbereitung">Vorbereitung</div>
         <div class="qa">
             
             <p>Damit der Workshop reibungslos durchgeführt werden kann, sollten (neben dem Kit) folgende Materialien bereitgestellt werden:</p>
@@ -293,7 +341,7 @@
             </ul>
         </div>
         
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Nachfüllen des Workshop-Kits</div>
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="A1Auffuellen">Nachfüllen des Workshop-Kits</div>
         <div class="qa">
 
             <p>Nach Abschluss eines Workshops gilt es, das Kit wieder einsatzbereit zu machen. Hierfür sind folgende Schritte notwendig:  </p>
@@ -371,14 +419,14 @@
         </div>
 
         <!-- ############################################################################################################ -->
-        <div class="chapter"><div class="chapter-text">Anregungen für einen DIY Löt-Workshop</div></div>
+        <div class="chapter"><div class="chapter-text" id="A2">Anregungen für einen <br>DIY Lötworkshop</div></div>
         <!-- ############################################################################################################ -->
 
         <div class="container">
               <div class="finner">
                 <h3>Um was handelt es sich?</h3>
                 Diese Anleitung bietet einige Anregungen, um einen DIY-Löt-Workshop zu hosten. Die Kits (oder auch einzelne Teile) können für jeweils 14 € <a href="mailto:schimmerleiter@proton.me">bei uns bestellt</a> werden. 
-Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglichkeiten, die hier vorgestellt werden, sind lediglich Vorschläge. Es gibt also meist auch andere Wege, um an das Ziel zu kommen.
+                Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglichkeiten, die hier vorgestellt werden, sind lediglich Vorschläge. Es gibt also meist auch andere Wege, um an das Ziel zu kommen.
               </div>
               <div class="finner">
                 <h3>Pro Kit wird benötigt:</h3>
@@ -392,7 +440,7 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
         
 
         
-          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Kit-Verpackung (inkl. Geschichte & Lesezeichen)</div>
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Kit-Verpackung (inkl. Geschichte & Lesezeichen)</div>
           <div class="qa">
               
               <p>Damit der Workshop reibungslos durchgeführt werden kann, sollten (neben dem Kit) folgende Materialien bereitgestellt werden:</p>
@@ -438,7 +486,7 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
           </div>
 
 
-          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Stoffsäckchen</div>
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Stoffsäckchen</div>
           <div class="qa">
                 
               <br>
@@ -462,7 +510,7 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
 
           
 
-          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Platine</div>
+          <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Platine</div>
           <div class="qa">
                 
               <br>
@@ -492,7 +540,7 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
           </div>
 
 
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">ATTiny85</div>
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >ATTiny85</div>
         <div class="qa">
 
             <br>
@@ -550,7 +598,7 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
             Den Sourcecode findest du <a href="https://github.com/tibifant/schimmerleiter/blob/main/code/src/main.cpp">hier</a>.
         </div>
 
-        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" id="__a0">Elektronische Komponenten</div>
+        <div class="qq" onclick="ask(event)" ontouchstart="ask(event)" >Elektronische Komponenten</div>
         <div class="qa">
 
             <br>
@@ -623,6 +671,8 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
 
         </ul>
         </div>
+        
+        <div style="opacity: 0%;margin:100pt auto;"></div>
 
 
         <script>
@@ -633,13 +683,16 @@ Alternativ können die Teile selbst hergestellt/vorbereitet werden. Die Möglich
             var element = document.getElementById(window.location.href.substring(idx + 1));
             var next = element.nextSibling;
 
-            while (next && (!next.className || next.className.toLowerCase() != "qa"))
-                next = next.nextSibling;
-                
-            next.style.display = 'block';
+            if (next != null)
+            {
+                while (next && (!next.className || next.className.toLowerCase() != "qa"))
+                    next = next.nextSibling;
 
-            if (element.className == 'qq')
-                element.style.borderBottomRightRadius = element.style.borderBottomLeftRadius = "0pt";
+                next.style.display = 'block';
+
+                if (element.className == 'qq')
+                    element.style.borderBottomRightRadius = element.style.borderBottomLeftRadius = "0pt";
+            }
           }
         </script>
 
