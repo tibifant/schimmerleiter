@@ -67,6 +67,9 @@
             .fouter {display:flex;}
             .finner {padding: 5pt;}
             .container {display: block;line-height: 125%;font-size: 13pt;margin: 25pt auto;width: 50%;min-width: 500pt;padding: 25pt 45pt 40pt 45pt;background: #e3e3e3;color: #3e3e3e;font-family: "Segoe UI", sans-serif;border: 5pt solid #eee;}
+            .liame { display: inline; user-select: all; }
+            .finner .liame::-moz-selection {color: #e8e8e8;background: #424242;opacity: 0;}
+            .finner .liame::selection {color: #e8e8e8;background: #424242;opacity: 0;}
             hr {margin: 25pt 0;border: none;height: 2pt;background: #cfcfcf;}
             deprecated {display: block;border: 1pt solid #cfc9af;background: #fff8ed;padding: 10pt 25pt;margin: 50pt 20pt 20pt;}
             deprecated::before {content: "[DEPRECATED]";font-family: Consolas, monospace;display: block;float: left;margin: -35pt -28pt;color: #cfc9af;font-size: 15pt;}
@@ -680,7 +683,10 @@
 
         <div class="container">
               <div class="finner">
-                Für Bestellungen, Fragen oder Anregungen, erreichst du uns unter: schi<norender>et</norender>mme<norender>l</norender>rlei<norender>ser</norender>ter@<norender>.!*#@</norender>pro<norender>nom</norender>ton.<norender>.a.v.c</norender>me
+                Für Bestellungen, bei Fragen oder Anregungen erreichst du uns unter: 
+                <div class="liame">
+                    schi<norender>et</norender>mme<norender>l</norender>rlei<norender>ser</norender>ter@<norender>.!*#@</norender>pro<norender>nom</norender>ton.<norender>.a.v.c</norender>me
+                </div>
               </div>
         </div>
         
